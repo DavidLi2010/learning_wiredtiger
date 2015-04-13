@@ -27,4 +27,4 @@ WiredTiger在调用`wiredtiger_open`函数的时候通过配置字符串参数�
 - 否则，所有的行被连接起来，换行符被替换为逗号。
 
 ###WiredTiger.basecfg文件
-当数据库被创建时，所有的非默认的配置信息都会保存到WiredTiger的home路径下的名为WiredTiger.basecfg文件中。以后无论何时打开数据库都会读取该文件。
+当数据库被创建时，所有的非默认的配置信息都会保存到WiredTiger的home路径下名为WiredTiger.basecfg的文件中。以后无论何时打开数据库都会读取该文件。
