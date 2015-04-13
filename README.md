@@ -1,6 +1,6 @@
-Learning WiredTiger
+WiredTiger Internals
 ===================
-docs about WiredTiger source code learning
+docs about WiredTiger internals
 
 ####contents
 
