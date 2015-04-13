@@ -10,3 +10,6 @@ docs about WiredTiger internals
 - [命令行工具](103_command_line_utility.md)
  - [导出格式](104_dump_formats.md)
 - [测试](105_testing.md)
+
+#####2. Applications
+- [开始使用API](201_getting_started.md)
