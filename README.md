@@ -1,6 +1,7 @@
 WiredTiger Internals
 ===================
-docs about WiredTiger internals
+docs about WiredTiger internals  
+also see <http://source.wiredtiger.com/2.5.2/index.html>
 
 ####contents
 
@@ -13,3 +14,4 @@ docs about WiredTiger internals
 
 #####2. Applications
 - [开始使用API](201_getting_started.md)
+- [配置字符串](202_configuration_strings.md)
