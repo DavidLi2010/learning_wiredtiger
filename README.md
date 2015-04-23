@@ -1,7 +1,7 @@
 WiredTiger Internals
 ===================
 docs about WiredTiger internals  
-also see <http://source.wiredtiger.com/2.5.2/index.html>
+see also <http://source.wiredtiger.com/2.5.2/index.html>
 
 ####contents
 
@@ -15,3 +15,4 @@ also see <http://source.wiredtiger.com/2.5.2/index.html>
 #####2. Applications
 - [开始使用API](201_getting_started.md)
 - [配置字符串](202_configuration_strings.md)
+- [游标](203_cursors.md)
