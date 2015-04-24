@@ -126,7 +126,7 @@ cursor_search_near(WT_CURSOR *cursor)
 
 游标的位置不会比事务存在的时间更长：在`WT_SESSION::begin_transaction`期间打开的游标，`WT_SESSION::commit_transaction`或`WT_SESSION::rollback_transcation`会使得它们丢失位置，就像调用了`WT_CURSOR::reset`一样。
 
-游标可以配置成调用`WT_CURSOR::next`时移动到随机的位置，参见[游标随机]()。
+游标可以配置成调用`WT_CURSOR::next`时移动到随机的位置，参见[随机游标](205_cursor_random.md)。
 
 **插入和更新**
 
