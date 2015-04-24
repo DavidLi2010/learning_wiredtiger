@@ -6,7 +6,7 @@ WiredTiger中的常见操作是通过WT_CURSOR句柄来执行的。游标包括�
 - 将字段编码以存储到数据源中
 - 在数据源中操纵与遍历的方法
 
-在[游标操作]()中查看对如何使用游标的描述。
+在[游标操作](204_cursor_operations.md)中查看对如何使用游标的描述。
 
 **游标类型**
 
@@ -78,11 +78,11 @@ ex_schema.c示例创建了一个表，它的值格式是”5sHq“，开头的�
 ret = session->open_cursor(session, "table:poptable", NULL, "raw", &cursor);
 while ((ret = cursor->next(cursor)) == 0) {
     WT_ITEM key, value;
-	
+
 	ret = cursor->get_key(cursor, &key);
 	ret = wiredtiger_struct_unpack(session, key.data, key.size, "r", &recno);
 	printf("ID %" PRIu64, recno);
-	
+
 	ret = cursor->get_value(cursor, &value);
 	ret = wiredtiger_struct_unpack(session, value.data, value.size, "5sHq", &country, &year, &population);
 	printf(": country %s, year %u, population %" PRIu64 "\n", country, year, population);
@@ -98,7 +98,7 @@ raw模式可以与投影组合使用。下面的例子使用raw模式只列出�
 ret = session->open_cursor(session, "table:poptable(country, year)", NULL, "raw", &cursor);
 while ((ret = cursor->next(cursor)) == 0) {
     WT_ITEM value;
-	
+
 	ret = cursor->get_value(cursor, &value);
 	ret = wiredtiger_struct_unpack(session, value.data, value.size, "5sH", &country, &year);
 	printf("country %s, year %u\n", country, year);
@@ -117,4 +117,3 @@ ret = session->open_cursor(session, "metadata:", NULL, NULL, &cursor);
 ```
 
 元数据游标是只读的，元数据不能被修改。
-
