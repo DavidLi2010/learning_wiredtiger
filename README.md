@@ -21,3 +21,4 @@ see also <http://source.wiredtiger.com/2.5.2/index.html>
  - [随机游标](205_cursor_random.md)
  - [数据源](206_data_sources.md)
 - [事务](207_transactions.md)
+- [错误处理](208_error_handling.md)
