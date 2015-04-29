@@ -15,6 +15,7 @@ WiredTiger支持事务，对ACID特性有如下警告：
 - 为了效率，每个事务的未提交更改必须在内存中完成。WiredTiger直到事务提交时才会写日志。
 
 **事务API**
+
 在WiredTiger中，事务操作是WT_SESSION类的方法。
 
 应用程序通过调用`WT_SESSION::begin_transaction`开启事务，使用该WT_SESSION句柄的随后执行的操作--包括该WT_SESSION句柄打开的任何游标（无论是在`WT_SESSION::begin_transaction`之前打开的还是之后打开的）--都是事务的一部分，通过调用`WT_SESSION::commit_transaction`来提交，或者调用`WT_SESSION::rollback_transaction`来放弃。
