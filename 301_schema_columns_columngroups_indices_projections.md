@@ -292,7 +292,7 @@ ret = session->create(session, "index:poptable:immutable_year", "columns=(year),
 
 **索引游标投影**
 
-默认情况下，使用`WT_CURSOR::get_value`时索引游标返回表的所有值列。应用程序在调用`WT_CURSOR::get_value`时可以指定应该返回的列，通过附加一个列的列表到`WT_SESSION::open_cursor`的uri参数。这被称为投影，查看[投影]()以获取详细信息。
+默认情况下，使用`WT_CURSOR::get_value`时索引游标返回表的所有值列。应用程序在调用`WT_CURSOR::get_value`时可以指定应该返回的列，通过附加一个列的列表到`WT_SESSION::open_cursor`的uri参数。这被称为投影，查看[游标](203_cursors.md)中的投影以获取详细信息。
 
 在索引游标上，使用投影可以避免在不包含与操作相关的列的列组上查询。
 
