@@ -130,7 +130,7 @@ uint16_t third;
 ret = cursor->get_key(cursor, &first, &second, &third);
 ```
 
-表的游标与表有相同的值格式，除非在`WT_SESSION::open_cursor`上配置了投影。查看[投影]()以获取更多信息。
+表的游标与表有相同的值格式，除非在`WT_SESSION::open_cursor`上配置了投影。查看[游标](203_cursors.md)中的投影以获取更多信息。
 
 `WT_CURSOR::set_value`用来设置值列，而`WT_CURSOR::get_value`用来获取值列，与`WT_CURSOR::set_key`和`WT_CURSOR::get_key`的方式相同。
 
