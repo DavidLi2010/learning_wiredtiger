@@ -1,7 +1,7 @@
 WiredTiger Internals
 ===================
 docs about WiredTiger internals  
-see also <http://source.wiredtiger.com/2.5.2/index.html>
+see also <http://source.wiredtiger.com/2.6.0/index.html>
 
 ####contents
 
