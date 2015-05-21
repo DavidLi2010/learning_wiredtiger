@@ -1,11 +1,10 @@
-WiredTiger Internals
+WiredTiger Docs
 ===================
-docs about WiredTiger internals  
 see also <http://source.wiredtiger.com/2.6.0/index.html>
 
-####contents
+####内容
 
-#####1. Management
+#####1. 管理
 
 - [数据库HOME路径](101_home_directory.md)
 - [数据库配置](102_configuration.md)
@@ -13,7 +12,7 @@ see also <http://source.wiredtiger.com/2.6.0/index.html>
     - [导出格式](104_dump_formats.md)
 - [测试](105_testing.md)
 
-#####2. Applications
+#####2. 应用
 
 **使用API**
 
@@ -33,3 +32,4 @@ see also <http://source.wiredtiger.com/2.6.0/index.html>
     - [打包与解包数据](303_packing_and_unpacking_data.md)
 - [日志结构合并树(LSM树)](304_log_structured_merge_trees.md)
 - [文件格式和压缩](305_file_formats_and_compression.md)
+    - [哈夫曼编码](306_huffman_encoding.md)
