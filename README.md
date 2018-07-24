@@ -2,9 +2,9 @@ WiredTiger Docs
 ===================
 see also <http://source.wiredtiger.com/2.6.0/index.html>
 
-####内容
+#### 内容
 
-#####1. 管理
+##### 1. 管理
 
 - [数据库HOME路径](101_home_directory.md)
 - [数据库配置](102_configuration.md)
@@ -12,7 +12,7 @@ see also <http://source.wiredtiger.com/2.6.0/index.html>
     - [导出格式](104_dump_formats.md)
 - [测试](105_testing.md)
 
-#####2. 应用
+##### 2. 应用
 
 **使用API**
 
